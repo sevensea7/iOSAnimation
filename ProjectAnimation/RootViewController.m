@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = @"iOS复杂动画";
+    self.title = @"iOSAnimation";
     [self initData];
     [self createTableView];
 }
