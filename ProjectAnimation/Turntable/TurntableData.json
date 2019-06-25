@@ -1,0 +1,8 @@
+[{"name" : "接表情游戏", "index" : 0, "probability" : 0.125},
+ {"name" : "全麦唱歌", "index" : 1, "probability" : 0.125},
+ {"name" : "数字游戏", "index" : 2, "probability" : 0.125},
+ {"name" : "猜歌名", "index" : 3, "probability" : 0.125},
+ {"name" : "你我他", "index" : 4, "probability" : 0.125},
+ {"name" : "全麦表白", "index" : 5, "probability" : 0.125},
+ {"name" : "我X你", "index" : 6, "probability" : 0.125},
+ {"name" : "谁是卧底", "index" : 7, "probability" : 0.125},]

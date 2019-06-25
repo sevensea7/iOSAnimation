@@ -1,0 +1,48 @@
+//
+//  PAHeader.pch
+//  ProjectAnimation
+//
+//  Created by 杭州任性智能科技有限公司 on 2019/3/4.
+//  Copyright © 2019年 zero. All rights reserved.
+//
+
+#ifndef PAHeader_pch
+#define PAHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "MJExtension/MJExtension.h"
+#import "SDAutoLayout/SDAutoLayout.h"
+
+// 屏幕宽高
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+// iPhone X
+#define iPhoneX (SCREEN_HEIGHT >= 812.f ? YES : NO)
+
+// 计算等比长宽
+#define WCX_SCALE_SCREEN_Width(width)  (SCREEN_WIDTH*((width)/(375.0)))
+#define WCX_SCALE_SCREEN_Height(height)  ((iPhoneX ? 667 : SCREEN_HEIGHT)*((height)/(667.0)))
+
+// 状态栏高度
+#define StatusBarHeight (iPhoneX ? 44 : 20)
+
+// 顶部安全区
+#define SafeAreaTopHeight (iPhoneX ? 88 : 64)
+
+// 底部安全区
+#define SafeAreaBottomHeight (iPhoneX ? 34 : 0)
+
+// 获取RGB颜色
+#define RGBA(r, g, b, a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define RGB(r, g, b) RGBA(r, g, b, 1.0f)
+
+#define COLOR_16F(hexValue,alphaValue) [UIColor colorWithRed:((float)((hexValue & 0xFF0000) >> 16))/255.0 green:((float)((hexValue & 0xFF00) >> 8))/255.0 blue:((float)(hexValue & 0xFF))/255.0 alpha:alphaValue]
+
+// 字体大小
+#define kFont(f) [UIFont systemFontOfSize:f]
+#define kBoldFont(f) [UIFont boldSystemFontOfSize:f]
+
+#endif /* PAHeader_pch */
